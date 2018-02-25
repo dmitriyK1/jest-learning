@@ -7,6 +7,9 @@ exports[`snapshot matches to stored snapshot 1`] = `
   <header
     className="App-header"
   >
+    <h1>
+      Hello world!
+    </h1>
     <img
       alt="logo"
       className="App-logo"

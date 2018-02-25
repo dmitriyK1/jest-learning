@@ -1,16 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import App from './App';
+import Message from './Message';
 import render from 'react-test-renderer';
 
 it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
-    ReactDOM.unmountComponentAtNode(div);
+  shallow(<App />);
 });
 
 it('snapshot matches to stored snapshot', () => {
     const tree = render.create(<App />).toJSON();
 
     expect(tree).toMatchSnapshot();
+});
+
+it('contains greeting message', () => {
+  const wrapper = shallow(<App />);
+  const message = <Message />;
+
+  expect(wrapper.contains(message)).toEqual(true);
 });
