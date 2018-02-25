@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import jest from 'jest';
 import render from 'react-test-renderer';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe('App component tests', () => {
+    it('renders without crashing', () => {
+        const div = document.createElement('div');
+        ReactDOM.render(<App />, div);
+        ReactDOM.unmountComponentAtNode(div);
+    });
 
-  const temp = render.create(<App />).toJSON();
-    console.log(temp);
+    it('snapshot matches to stored snapshot', () => {
+        const tree = render.create(<App />).toJSON();
 
-  expect(temp).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
+    });
 });
+
