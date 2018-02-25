@@ -18,5 +18,5 @@ it('contains greeting message', () => {
   const wrapper = shallow(<App />);
   const message = <Message />;
 
-  expect(wrapper.contains(message)).toEqual(true);
+  expect(wrapper).toContainReact(message);
 });
