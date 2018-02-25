@@ -10,7 +10,7 @@ exports[`App component tests snapshot matches to stored snapshot 1`] = `
     <img
       alt="logo"
       className="App-logo"
-      src="logo.svg"
+      src="test-file-stub"
     />
     <h1
       className="App-title"
