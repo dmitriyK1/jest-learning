@@ -1,5 +1,15 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    {
+      "semanticCommitType": "TASK",
+      "semanticCommitScope": null,
+      "semanticCommits": true,
+      "docker": false,
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
   ]
 }
