@@ -11,7 +11,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "tests": "NODE_ENV=test jest",
+    "tests": "NODE_ENV=test jest --watch",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
