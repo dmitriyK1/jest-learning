@@ -1,0 +1,10 @@
+{
+  "env": {
+    "test": {
+      "presets": [
+        "react",
+        ["env", { "useBuiltIns": true }]
+      ]
+    }
+  }
+}
