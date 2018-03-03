@@ -10,4 +10,5 @@ module.exports = {
   globals: {}, // used for mocking global variables
   setupFiles: ['<rootDir>/jest/setupFiles/enzyme.js'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
+  roots: ['<rootDir>/src']
 };
