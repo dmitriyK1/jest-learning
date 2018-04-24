@@ -13,7 +13,7 @@ exports[`snapshot matches to stored snapshot 1`] = `
     <img
       alt="logo"
       className="App-logo"
-      src="test-file-stub"
+      src="logo.svg"
     />
     <h1
       className="App-title"
