@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
 import renderer from 'react-test-renderer';
-import { shallowToJson } from 'enzyme-to-json';
 // import Message from './Message';
 
 describe('shallow render App', () => {
@@ -30,7 +29,7 @@ describe('shallow render App', () => {
   });
 
   it('matches snapshot', () => {
-    expect(shallowToJson(wrapper)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });
 
