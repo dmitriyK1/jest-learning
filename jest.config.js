@@ -6,7 +6,7 @@ module.exports = {
   ],
   testEnvironment: 'node',
   testURL: 'http://localhost',
-  "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
+  setupTestFrameworkScriptFile: "<rootDir>/src/setupTests.js",
   setupFiles: ['<rootDir>/__mocks__/polyfills.js'],
   "transform": {
     '^(?!.*\\.(js|jsx|mjs|css|json)$)': "<rootDir>/__mocks__/fileTransform.js",
