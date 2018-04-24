@@ -1,15 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot matches to stored snapshot 1`] = `
+exports[`shallow render App matches snapshot 1`] = `
 <div
   className="App"
 >
   <header
     className="App-header"
   >
-    <h1>
-      Hello world!
-    </h1>
+    <input
+      type="text"
+      value={777}
+    />
+    <Message />
     <img
       alt="logo"
       className="App-logo"
